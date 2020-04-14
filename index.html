@@ -27,7 +27,7 @@
                 <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
               </ul>
               <span class="navbar-text">
-                <a data-toggle="modal" data-target="#loginModal" href="#">
+                <a id="logIt" href="#">
                   <span class="fa fa-sign-in"></span> Login
                 </a>
               </span>
@@ -86,7 +86,7 @@
                     <img src="img/logo.png" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                  <a class="bg-warning btn-block btn-sm text-center" data-toggle="modal" data-target="#reserveMod" href="#jump">Reserve Table</a>
+                  <a class="bg-warning btn-block btn-sm text-center" id="reserveIt" href="#jump">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -94,7 +94,7 @@
     <div id="reserveMod" class="modal fade" role="dialog">
       <div class="modal-dialog modal-lg" role="content">
         <div class="modal-content">
-          <div class="modal-header bg-warning">
+          <div class="modal-header">
             <h4 class="modal-title">Reserve Table</h4>
             <button type="button" class="close" data-dismiss="modal">
               ×
@@ -331,6 +331,13 @@
       }
 
     });
+  <!-- Assignment4 -->
+   $('#logIt').click(function(){
+     $('#loginModal').modal('show');
+   });
+   $('#reserveIt').click(function(){
+     $('#reserveMod').modal('show');
+   });
   });
 </script>
 </body></html>
